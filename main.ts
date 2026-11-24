@@ -9,16 +9,23 @@
 // in something real and specific; and does every word work, with no
 // filler and no worn phrase.
 //
-// The line (draft): "The escalator handrail slid ahead of my palm, and
-// for three steps my hand was holding the future."
+// The line (revised): "The escalator handrail slid ahead of my palm,
+// and for three steps I was holding tomorrow."
 //
 // A small, concrete, slightly uncanny moment everyone has felt but few
 // have phrased: on an escalator the rubber handrail runs a little
 // faster than the steps, so your palm is always being left behind by
-// the very thing you are holding. The turn — holding the future —
+// the very thing you are holding. The turn — holding tomorrow —
 // makes the ordinary commute strange in one read, and it is grounded
 // in two specific details (the palm, three steps) rather than floating
 // in abstraction.
+//
+// Revision: the draft said "my hand was holding the future". "My hand"
+// repeated a body part already named ("my palm"), so it was filler,
+// and "the future" is vaguer than "tomorrow". Cutting the repeat and
+// swapping in the concrete "tomorrow" tightens the line from 97 to 89
+// characters, makes the surprise land sooner, and puts the speaker —
+// not just the hand — in the strange moment.
 //
 // Node 22, standard library only. Writes the line to /output/entry.txt
 // (or $MAKEFUN_OUTPUT_DIR/entry.txt) with no trailing newline, and
@@ -27,7 +34,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const line =
-  "The escalator handrail slid ahead of my palm, and for three steps my hand was holding the future.";
+  "The escalator handrail slid ahead of my palm, and for three steps I was holding tomorrow.";
 
 // Gate (mirrors the competition gate): the entry must be UTF-8 text of
 // 1 to 200 characters, not only white space. Count code points, not
